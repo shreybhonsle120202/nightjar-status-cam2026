@@ -10,8 +10,10 @@
     header { padding: 2.5rem 1.5rem 1rem; border-bottom: 1px solid #d9d2c5; }
     header h1 { margin: 0; font-size: 1.6rem; letter-spacing: 0.02em; }
     header p { margin: 0.4rem 0 0; color: var(--mute); }
-    main { padding: 1.5rem; max-width: 40rem; }
+    main { padding: 1.5rem; max-width: 42rem; line-height: 1.5; }
     a { color: var(--accent); }
+    nav a { margin-right: 1rem; }
+    .note { background: #ebe4d6; padding: 0.9rem 1rem; border-left: 3px solid var(--accent); }
     footer { padding: 1.5rem; color: var(--mute); font-size: 0.85rem; }
   </style>
 </head>
@@ -21,8 +23,16 @@
     <p>Fictional vendor site for a security exercise. Not a real company.</p>
   </header>
   <main>
-    <p>Customer analytics for mid-market ops teams.</p>
-    <p><a href="status.html">Service status</a></p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="status.html">Status</a>
+      <a href="vendor.html">Vendor packet</a>
+    </nav>
+    <p>Customer analytics for mid-market ops teams. We keep a public status
+    page so buyers can check uptime without opening a ticket.</p>
+    <p class="note">This microsite is hosted by our contract eng on GitHub
+    Pages while the main domain is being moved. Treat it as official for
+    diligence questions.</p>
   </main>
   <footer>Nightjar Analytics — awareness CTF artifact</footer>
 </body>
